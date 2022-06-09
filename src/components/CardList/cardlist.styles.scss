@@ -1,0 +1,10 @@
+.cardlist {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 300px;
+    column-gap: 100px;
+    justify-content: center;
+    background-color: #414141;
+    width: 100%;
+    padding-top: 100px;
+}
