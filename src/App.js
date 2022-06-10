@@ -28,12 +28,12 @@ export default function App() {
     };
 
     return (
-        <div className="App">
+        <div className="app">
             <Header />
             <div className='cardlist-container'>
                 <Searchbox onChangeHandler={onSearchChange}/>
                 <CardList stockData={filteredData} />
             </div>
         </div>
-    );
+    )
 }
