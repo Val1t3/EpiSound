@@ -6,7 +6,12 @@ export const stockData = [
     },
     {
         "id": "2",
+        "name": "Gregoire",
+        "src": "./assets/sounds/malloc.mp3"
+    },
+    {
+        "id": "3",
         "name": "Valentin",
-        "src": "./assets/sounds/ahhh.mp3"
+        "src": "./assets/sounds/feur.mp3"
     }
 ];
