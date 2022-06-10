@@ -6,7 +6,7 @@ export const stockData = [
     },
     {
         "id": "2",
-        "name": "Gregoire",
+        "name": "Grégoire",
         "src": "./assets/sounds/malloc.mp3"
     },
     {
