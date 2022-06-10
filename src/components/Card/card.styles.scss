@@ -1,5 +1,6 @@
 .card {
     text-align: center;
+    color: #003b62;
 
     img {
         margin-top: 10px;
@@ -7,10 +8,14 @@
     }
 
     &:hover {
-        background-color: #525252;
+        background-color: #edf7ff;
 
         img {
             width: 180px;
+        }
+
+        p {
+            text-decoration: underline;
         }
     }
 }
