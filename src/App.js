@@ -1,14 +1,39 @@
+import { useState, useEffect } from 'react';
+
 import Header from './components/Header/header.component';
 import CardList from './components/CardList/cardlist.component';
+import Searchbox from './components/SearchBox/searchbox.component';
+
+import { stockData } from "./data";
+
 
 import './app.scss';
 
 export default function App() {
 
-  return (
-    <div className="App">
-      <Header />
-      <CardList />
-    </div>
-  );
+    const [items, setItems] = useState(stockData);
+    const [searchField, setSearchField] = useState('');
+    const [filteredData, setFilteredData] = useState([]);
+
+    useEffect(() => {
+        const newFilteredData = stockData.filter((data) => {
+            return data.name.toLocaleLowerCase().includes(searchField);
+        });
+        setFilteredData(newFilteredData);
+    }, [items, searchField]);
+
+    const onSearchChange = (event) => {
+        const searchFieldString = event.target.value.toLocaleLowerCase();
+        setSearchField(searchFieldString);
+    };
+
+    return (
+        <div className="App">
+            <Header />
+            <div className='cardlist-container'>
+                <Searchbox onChangeHandler={onSearchChange}/>
+                <CardList stockData={filteredData} />
+            </div>
+        </div>
+    );
 }
