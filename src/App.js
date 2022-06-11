@@ -26,7 +26,7 @@ export default function App() {
     return (
         <div className="app">
             <Header />
-            <div className='cardlist-container text-center'>
+            <div className='card-list-container text-center'>
                 <Searchbox onChangeHandler={onSearchChange} />
                 <CardList stockData={filteredData} />
             </div>
