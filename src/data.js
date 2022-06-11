@@ -18,5 +18,10 @@ export const stockData = [
         "id": "4",
         "name": "Valentin",
         "src": "./assets/sounds/quoi.mp3"
+    },
+    {
+        "id": "5",
+        "name": "Valentin",
+        "src": "./assets/sounds/quoi.mp3"
     }
 ];
