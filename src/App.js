@@ -1,14 +1,10 @@
 import { useState, useEffect } from 'react';
-
 import Header from './components/Header/header.component';
 import CardList from './components/CardList/cardlist.component';
 import Searchbox from './components/SearchBox/searchbox.component';
-
 import { stockData } from "./data";
-
-
 import './app.scss';
-
+import './custom.scss';
 export default function App() {
 
     const [items, setItems] = useState(stockData);
